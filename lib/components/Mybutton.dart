@@ -7,7 +7,7 @@ class MyButton extends StatelessWidget {
   const MyButton(
       {super.key,
       required this.title,
-      this.colors = const Color(0xffa5a5a5),
+      this.colors = const Color(0xff757575),
       required this.onpress});
 
   @override

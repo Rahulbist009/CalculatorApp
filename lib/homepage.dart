@@ -58,6 +58,7 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         MyButton(
                           title: 'Ac',
+                          colors: Color(0xff2196f3),
                           onpress: () {
                             userInput = '';
                             result = '';
@@ -82,7 +83,7 @@ class _HomePageState extends State<HomePage> {
                             userInput += '/';
                             setState(() {});
                           },
-                          colors: const Color(0xffffB74D),
+                          colors: const Color(0xffff9100),
                         ),
                       ],
                     ),
@@ -113,7 +114,7 @@ class _HomePageState extends State<HomePage> {
                             userInput += 'x';
                             setState(() {});
                           },
-                          colors: const Color(0xffffB74D),
+                          colors: const Color(0xffff9100),
                         ),
                       ],
                     ),
@@ -143,7 +144,7 @@ class _HomePageState extends State<HomePage> {
                               userInput += '-';
                               setState(() {});
                             },
-                            colors: const Color(0xffffB74D)),
+                            colors: const Color(0xffff9100)),
                       ],
                     ),
                     Row(
@@ -172,7 +173,7 @@ class _HomePageState extends State<HomePage> {
                               userInput += '+';
                               setState(() {});
                             },
-                            colors: const Color(0xffffB74D)),
+                            colors: const Color(0xffff9100)),
                       ],
                     ),
                     Row(
@@ -186,7 +187,7 @@ class _HomePageState extends State<HomePage> {
                         MyButton(
                             title: 'del',
                             onpress: () {
-                              userInput = 'del';
+                              userInput =userInput.substring(0,userInput.length -1);
                               setState(() {});
                             }),
                         MyButton(
@@ -201,7 +202,7 @@ class _HomePageState extends State<HomePage> {
                               equalPres();
                               setState(() {});
                             },
-                            colors: const Color(0xffffB74D)),
+                            colors: const Color(0xffff9100)),
                       ],
                     ),
                   ],
