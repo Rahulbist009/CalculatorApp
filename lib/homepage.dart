@@ -187,7 +187,8 @@ class _HomePageState extends State<HomePage> {
                         MyButton(
                             title: 'del',
                             onpress: () {
-                              userInput =userInput.substring(0,userInput.length -1);
+                              userInput =
+                                  userInput.substring(0, userInput.length - 1);
                               setState(() {});
                             }),
                         MyButton(
