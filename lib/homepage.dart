@@ -17,6 +17,13 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.blue,
+        title: Text(
+          'Calculator',
+          style: TextStyle(fontSize: 25, color: Colors.black),
+        ),
+      ),
       backgroundColor: Colors.black,
       body: SafeArea(
         child: Padding(
