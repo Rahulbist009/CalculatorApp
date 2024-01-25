@@ -65,7 +65,7 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         MyButton(
                           title: 'Ac',
-                          colors: Color(0xff2196f3),
+                          colors: const Color(0xff2196f3),
                           onpress: () {
                             userInput = '';
                             result = '';
